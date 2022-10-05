@@ -115,7 +115,7 @@ svg.selectAll("text")
 
 d3.select("body").append("p")
 
-var dataset2 = [
+var dataset = [
   [ 5,     20 ],
   [ 480,   90 ],
   [ 250,   50 ],
@@ -129,13 +129,13 @@ var dataset2 = [
 ];
 
 //Crear un elemento SVG
-var svg2 = d3.select("body")
+var svg = d3.select("body")
              .append("svg")
              .attr("width", w)
              .attr("height", h);
 
-svg2.selectAll("circle")
-    .data(dataset2)
+svg.selectAll("circle")
+    .data(dataset)
     .enter()
     .append("circle")
     .attr("cx", function(d) {
@@ -150,8 +150,8 @@ svg2.selectAll("circle")
     //   });
     .attr("fill", "teal");
 
-svg2.selectAll("text")
-   .data(dataset2)
+svg.selectAll("text")
+   .data(dataset)
    .enter()
    .append("text")
    .text(function(d) {
