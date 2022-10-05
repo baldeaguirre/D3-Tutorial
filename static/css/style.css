@@ -1,0 +1,18 @@
+/* body {
+    background-color: white;
+    color: blue;
+} */
+
+div.bar {
+	display: inline-block;
+	width: 20px;
+	height: 75px;	/* Gets overriden by D3-assigned height below */
+    margin-right: 2px;
+	background-color: teal;
+}
+
+svg .pumpkin {
+    fill: yellow;
+    stroke: black;
+    stroke-width: 2;
+}
